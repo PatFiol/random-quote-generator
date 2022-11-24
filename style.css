@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora&display=swap');
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: blanchedalmond;
-  background-image: url(assets/10.jpg);
-  color: #9090;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+	background-color: #f7f6f9;
+  background-image: url(assets/watercolor-texture.jpg);
+	color: rgb(37, 37, 37);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-quote-container {
-  width: auto;
-  max-width: 1000px;
-  padding: 30px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.8);
-  /* border: solid 1px rgba(51, 51, 51, 0.4); */
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+/* QUOTES */
+.quote-container {
+	width: auto;
+	max-width: 1000px;
+	padding: 30px 30px 20px;
+	border-radius: 10px;
+	border: none;
+	background-color: rgba(239, 239, 239, 0.8);
+	box-shadow: 6px 3px 6px 4px rgba(60, 35, 35, 0.2);
 }
 
 .quote-text {
@@ -34,7 +35,87 @@ quote-container {
 
 .quote-author {
 	margin-top: 40px;
+	margin-bottom: 40px;
 	font-family: 'Cinzel Decorative', cursive;
-  /* font-weight: bold; */
+	font-size: 1.3rem;
+}
+
+button {
+	cursor: pointer;
 	font-size: 1.6rem;
+	height: 2.6rem;
+	border: 0.5px solid rgb(60, 35, 35);
+	border-radius: 10px;
+	color: rgb(60, 35, 35, 0.9);
+	background: transparent;
+	padding: 0.5rem 1.4rem;
+	box-shadow: 0 0.3rem rgba(60, 35, 35, 0.4);
+}
+
+button:hover {
+	background-color: rgb(60, 35, 35, 0.9);;
+}
+
+button:active {
+	transform: translate(0, 0.3rem);
+	box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65)
+}
+
+.fa-arrow-rotate-right {
+	font-size: 1.8rem;
+}
+
+
+/* SHARE BUTTONS */
+.twitter-button:hover {
+	color: #1da1f2;
+}
+.facebook-button:hover {
+	color: #1877f2;
+}
+.reddit-button:hover {
+	color: #ff4500;
+}
+.linkedin-button:hover {
+	color: #0077b5;
+}
+
+.refresh-button:hover {
+	color: rgb(224, 165, 14);
+}
+
+.share-buttons {
+	padding: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.share-buttons > button {
+	margin: 10px;
+	font-size: 1.5rem;
+	color: rgb(60, 35, 35);
+}
+
+#twitter, #facebook, #reddit, #linkedin {
+	background-color: transparent;
+	border: 0.5px solid rgb(60, 35, 35);
+}
+#twitter:hover, #facebook:hover, #reddit:hover, #linkedin:hover {
+	background-color: rgb(60, 35, 35, 0.9);
+}
+
+
+/* Media Query: Tablet or smaller */
+@media screen and (max-width: 1000px) {
+	.quote-container {
+		margin: auto 10px;
+	}
+
+	.quote-text {
+		font-size: 1.5rem;
+	}
+
+  .quote-author {
+    margin-bottom: 70px;
+  }
 }
