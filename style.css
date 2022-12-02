@@ -1,119 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora&display=swap");
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	min-height: 100vh;
-	background-color: hsl(260, 20%, 97%);
+  margin: 0;
+  min-height: 100vh;
+  background-color: hsl(260, 20%, 97%);
   background-image: url(assets/watercolor-texture.jpg);
-	color: hsl(0, 30%, 32%);
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  color: hsl(0, 30%, 32%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
-	font-weight: 700;
-	font-size: 2.6rem;
-	color: hsl(0, 67%, 19%);
-	margin-bottom: 7rem;
-	/* font-family: 'Lora', serif; */
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: hsl(0, 67%, 19%);
+  margin-bottom: 7rem;
+  /* font-family: 'Lora', serif; */
 }
 
 /* QUOTES */
 .quote-container {
-	width: auto;
-	max-width: 1000px;
-	padding: 30px 30px 20px;
-	border-radius: 10px;
-	border: none;
-	background-color: hsla(0, 0%, 94%, 0.8);
-	box-shadow: 6px 3px 6px 4px hsla(0, 26%, 19%, 0.2);
+  width: auto;
+  max-width: 1000px;
+  padding: 30px 30px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsla(0, 0%, 94%, 0.8);
+  box-shadow: 6px 3px 6px 4px hsla(0, 26%, 19%, 0.2);
 }
 
 .quote-text {
-	font-family: 'Lora', serif;
-	font-size: 2rem;
+  font-family: "Lora", serif;
+  font-size: 2rem;
 }
 
 .quote-author {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	font-family: 'Cinzel Decorative', cursive;
-	font-size: 1.3rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 1.3rem;
 }
 
 button {
-	cursor: pointer;
-	font-size: 1.6rem;
-	height: 2.6rem;
-	border: 0.5px solid hsl(0, 26%, 19%);
-	border-radius: 10px;
-	color: hsla(0, 26%, 19%, 0.9);
-	background: transparent;
-	padding: 0.5rem 1.4rem;
-	box-shadow: 0 0.3rem hsla(0, 26%, 19%, 0.4);
+  cursor: pointer;
+  font-size: 1.6rem;
+  height: 2.6rem;
+  border: 0.5px solid hsl(0, 26%, 19%);
+  border-radius: 10px;
+  color: hsla(0, 26%, 19%, 0.9);
+  background: transparent;
+  padding: 0.5rem 1.4rem;
+  box-shadow: 0 0.3rem hsla(0, 26%, 19%, 0.4);
 }
 
 button:hover {
-	background-color: hsla(0, 26%, 19%, 0.9);
+  background-color: hsla(0, 26%, 19%, 0.9);
 }
 
 button:active {
-	transform: translate(0, 0.3rem);
-	box-shadow: 0 0.1rem hsla(0, 0%, 100%, 0.65);
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem hsla(0, 0%, 100%, 0.65);
 }
 
 .fa-arrow-rotate-right {
-	font-size: 1.7rem;
+  font-size: 1.7rem;
 }
-
 
 /* SHARE BUTTONS */
 .twitter-button:hover {
-	color: #1da1f2;
+  color: #1da1f2;
 }
 .facebook-button:hover {
-	color: #1877f2;
+  color: #1877f2;
 }
 .reddit-button:hover {
-	color: #ff4500;
+  color: #ff4500;
 }
 .linkedin-button:hover {
-	color: #00a0dc;
+  color: #00a0dc;
 }
 
 .refresh-button:hover {
-	color: hsl(43, 88%, 47%);
+  color: hsl(43, 88%, 47%);
 }
 
 .share-buttons {
-	padding: 40px 0;
-	display: flex;
-	justify-content: center;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .share-buttons > button {
-	margin: 10px;
-	font-size: 1.6rem;
-	color: hsl(0, 26%, 19%);
+  margin: 10px;
+  font-size: 1.6rem;
+  color: hsl(0, 26%, 19%);
 }
-
 
 /* Media Query: Tablet or smaller */
 @media screen and (max-width: 1000px) {
-	.quote-container {
-		margin: auto 10px;
-	}
+  .quote-container {
+    margin: auto 10px;
+  }
 
-	.quote-text {
-		font-size: 1.5rem;
-	}
+  .quote-text {
+    font-size: 1.5rem;
+  }
 
   .quote-author {
     margin-bottom: 70px;
