@@ -11,7 +11,6 @@ const linkedinBtn = document.getElementById("linkedin");
 // Show New Quote
 function newQuote() {
   const Quote = localQuotes[Math.floor(Math.random() * localQuotes.length)];
-  // Check if Author field is blank and replace it with 'Unknown'
   if (!Quote.author) {
     authorText.textContent = "Unknown";
   } else {
