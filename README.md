@@ -23,3 +23,4 @@ Enjoy it! :joy:
 ![quote-generator-screenshot_2](https://user-images.githubusercontent.com/96197951/204032644-365967ed-1f52-4cb5-be81-0781c841fd8c.jpg)
 
 ![quote-generator-screenshot_3](https://user-images.githubusercontent.com/96197951/204032649-212fbee1-e565-44af-a4ad-e19dfea5d3b8.jpg)
+
